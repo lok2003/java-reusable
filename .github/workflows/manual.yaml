@@ -1,9 +1,11 @@
 name: Build java reusable workflow 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - dev
 
 
-    
 jobs:
   build:
     uses: lok-org/reusable-workflow-maven/.github/workflows/java_maven_build.yaml@main
