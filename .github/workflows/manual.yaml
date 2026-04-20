@@ -11,4 +11,5 @@ jobs:
     uses: lok-org/reusable-workflow-maven/.github/workflows/java_maven_build.yaml@main
     with:
       java_version: '21'
-      maven_command: 'mvn clean package'
+      maven_command: 'mvn clean verify'
+    secrets: inherit
