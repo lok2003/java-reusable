@@ -1,0 +1,12 @@
+name: Build java reusable workflow 
+on:
+  workflow_dispatch:
+
+
+    
+jobs:
+  build:
+    uses: lok-org/reusable-workflow-maven/.github/workflows/java_maven_build.yaml@main
+    with:
+      java_version: '21'
+      maven_command: 'mvn clean package'
